@@ -1,3 +1,7 @@
-Hola buenas tardes.
-
-Escribimos unos cambios en el archivo para volver a subirlo con git
+Código de Git:
+    - git status: Estado actual de los archivos del repositorio
+    - git log: Historial de cambios en el repositorio
+    - git add: Añadir archivos al repositorio
+    - git commit -m: Confirmar y añadir una descripción a los últimos archivos añadidos al repositorio
+    - git checkout: Recuperar una versión anterior del repositorio
+    - git push -u origin main: Subir la nueva versión del repositorio a GitHub
