@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: grey;
+        }
+        div *{
+            background-color: blue;
+            color: white;
+        }
+        div div div a{
+            background-color:red;
+            color:yellow;
+        }
+        .abuelo{
+            border-color: blue;
+            border-width: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div id="abuelo">
+        <p>Párrafo 1</p>
+        <p>Párrafo 2</p>
+        <div class="padre">
+            <div class="hijo"><a title="Título hijo1" target="_blank">HIJO1</a></div>
+            <div class="hijo"><a>HIJO2</a></div>
+            <div class="hijo"><a title="hijo3" target="_blank">HIJO3</a></div>
+        </div>
+        <p>Párrafo 3</p>
+        <p>Párrafo 4</p>
+        <div class="padre">
+            <div class="hijo"><a title="hijo4" target="_blank">HIJO4</a></div>
+            <div class="hijo"><a title="hijo5" target="_blank">HIJO5</a></div>
+            <div class="hijo"><a>HIJO6</a></div>
+        </div>
+        <p>Párrafo 5</p>
+        <p class="madre">Párrafo 6</p>
+        <p>Párrafo 7</p>
+            <div>Párrafo 8</div>
+        <p>Párrafo 9</p>
+</body>
+</html>

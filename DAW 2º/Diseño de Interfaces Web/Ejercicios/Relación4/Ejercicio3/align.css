@@ -1,0 +1,16 @@
+li{
+    font-family: Arial;
+}
+h1{
+    font-family: 'Courier New';
+    color: darkred;
+}
+.listaDesor{
+    background-color: lightyellow;
+}
+.listaDesor li{
+    background-color: grey;
+}
+.listaImagen li{
+    background-color: grey;
+}

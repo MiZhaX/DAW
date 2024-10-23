@@ -1,0 +1,18 @@
+ol{
+    margin-top: 50px;
+}
+li{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.listaDesor{
+    margin-top: 50px;
+    list-style-type: square;    
+}
+.listaImagen{
+    margin-top: 50px;
+    list-style-image: url("./punto-de-lista.png"); 
+}
+h1{
+    text-align: center;
+}
