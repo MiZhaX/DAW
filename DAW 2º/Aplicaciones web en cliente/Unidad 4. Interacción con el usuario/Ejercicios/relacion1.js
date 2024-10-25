@@ -20,29 +20,13 @@ for (let i = 0; i < 100; i++) {
 }
 document.write('</table>');
 
-let control = false;
-let shift = false;
-let alt = false;
-
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'Control') control = true;
-  if (event.key === 'Shift') shift = true;
-  if (event.key === 'Alt') alt = true;
-});
-
-document.addEventListener('keyup', function(event) {
-  if (event.key === 'Control') control = false;
-  if (event.key === 'Shift') shift = false;
-  if (event.key === 'Alt') alt = false;
-});
-
 const celdas = document.querySelectorAll('td');
 celdas.forEach((celda) => {
   celda.addEventListener('mouseover', pintarcelda);
 });
 
 function pintarcelda(event) {
-  if (control) event.target.style.backgroundColor = "blue";
-  else if(shift) event.target.style.backgroundColor = "red";
-  else if(alt) event.target.style.backgroundColor = "white";
+  if (event.ctrlKey) event.target.style.backgroundColor = "blue";
+  else if(event.shiftKey) event.target.style.backgroundColor = "red";
+  else if(event.altKey) event.target.style.backgroundColor = "white";
 }
