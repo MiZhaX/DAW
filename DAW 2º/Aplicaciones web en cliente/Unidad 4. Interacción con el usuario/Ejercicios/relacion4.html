@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Guessing Game</title>
+    <script src="relacion4b.js"></script>
+    <style>
+        #cabecera {
+            background-color: rgb(35, 137, 170);
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        h1 {
+            color: white;
+            margin: 0;
+        }
+        h2 {
+            color: white;
+            margin: 0;
+        }
+        #menu {
+            background-color: rgb(214, 233, 233);
+            display: flex;
+            justify-content: center;
+        }
+        #botones {
+            display: flex;
+            width: 100%;
+            max-width: 467px;
+        }
+        #reiniciar {
+            margin-right: auto;
+        }
+        #facil, #dificil {
+            margin-left: 10px;
+        }
+        button {
+            font-size: 14px;
+        }
+        #juego {
+            background-color: rgb(35, 35, 35);
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #colores {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 40px;
+        }
+        .color {
+            height: 120px;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cabecera">
+        <h1>THE GREAT GUESSING GAME</h1>
+        <br>
+        <h2 id="rgb"></h2>
+    </div>
+    <div id="menu">
+        <div id="botones">
+            <button id="reiniciar">NEW COLORS</button>
+            <button id="facil">EASY</button>
+            <button id="dificil">HARD</button>
+        </div>
+    </div>
+    <div id="juego">
+        <div id="colores">
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+        </div>
+    </div>
+</body>
+</html>
