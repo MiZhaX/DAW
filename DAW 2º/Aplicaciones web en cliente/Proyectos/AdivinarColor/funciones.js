@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // ---------- VARIABLES ----------
     // VARIABLES GLOBALES TOMADOS POR ID
     const colors = document.getElementsByClassName("color");
+    const colores = Array.from(colors); // CREAMOS UN ARRAY CON TODOS LOS COLORES
     const reinicio = document.getElementById("reiniciar");
     const rgb = document.getElementById("rgb");
     const textModo = document.getElementById("modo");
@@ -10,6 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const facil = document.getElementById("facil");
     const dificil = document.getElementById("dificil");
     const textVidas = document.getElementById("vidas");
+
+    // VARIABLE DONDE ALMACENAREMOS EL COLOR CORRECTO
+    let correcto = nuevosColores();
+
 
     // VARIABLES GLOBALES DEL JUEGO
     var puntos = 0;
@@ -19,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // ---------- FUNCIONES ----------
     // FUNCIÓN PARA GENERAR NUEVOS COLORES
     function nuevosColores(){
-        Array.from(colors).forEach(color => {
+        colores.forEach(color => {
             // MOSTRAMOS NUEVAMENTE LOS COLORES OCULTADOS
             color.style.opacity = 1;
 
@@ -37,8 +42,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         // OBTENEMOS UN COLOR ALEATORIO DE LOS GENERADOS Y ACTUALIZAMOS EL COLOR CORRECTO
-        const aleatorio = Math.floor(Math.random() * colors.length);
-        const colorAleatorio = colors[aleatorio];
+        const aleatorio = Math.floor(Math.random() * colores.length);
+        const colorAleatorio = colores[aleatorio];
         const colorCorrecto = colorAleatorio.style.backgroundColor;
 
         console.log("Color seleccionado aleatoriamente:" + colorCorrecto + ". En la posición: " + aleatorio);
@@ -48,9 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         return colorCorrecto;
     }
-
-    // VARIABLE DONDE ALMACENAREMOS EL COLOR CORRECTO
-    let correcto = nuevosColores();
 
     //  ---------- EVENTOS -----------
     // BOTON MODO FÁCIL
@@ -88,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // COLORES 
-    Array.from(colors).forEach(color => {
+    colores.forEach(color => {
         color.addEventListener("click", () => {
             // DETECTAMOS SI AL JUGADOR NO LE QUEDAN VIDAS EN EL MODO DIFÍCIL
             if(vidas == 0 && modo == 1){

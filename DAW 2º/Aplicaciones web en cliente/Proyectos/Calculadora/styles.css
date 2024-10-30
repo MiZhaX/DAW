@@ -1,0 +1,16 @@
+button{
+    font-size: xx-large;
+    height: 50px;
+    width: 100px;
+}
+
+#igual{
+    height: 210px;
+}
+
+#resultado{
+    height: 50px;
+    width: 400px;
+    border: 1px solid rgb(79, 79, 79);
+    overflow: hidden;
+}
