@@ -16,7 +16,7 @@ window.onload = () => {
     const sumar = document.getElementById("sumar").addEventListener("click", () => {
         var num1 = resultado.innerText;
         resultado.innerText += " + ";
-    });
+    }); 
     const restar = document.getElementById("restar").addEventListener("click", () => {resultado.innerText += " - "});
     const multiplicar = document.getElementById("multiplicar").addEventListener("click", () => {resultado.innerText += " * '&nbsp;'"});
     const dividir = document.getElementById("dividir").addEventListener("click", () => {resultado.innerText += " / "});
