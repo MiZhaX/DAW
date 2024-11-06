@@ -12,16 +12,15 @@ window.onload = () => {
 
     const resultado = document.getElementById("resultado");
     const previa = document.getElementById("previa");
-    const cero = document.getElementById("cero").addEventListener("click", () => {agregarNumero("0")});
-    const uno = document.getElementById("uno").addEventListener("click", () => {agregarNumero("1")});
-    const dos = document.getElementById("dos").addEventListener("click", () => {agregarNumero("2")});
-    const tres = document.getElementById("tres").addEventListener("click", () => {agregarNumero("3")});
-    const cuatro = document.getElementById("cuatro").addEventListener("click", () => {agregarNumero("4")});
-    const cinco = document.getElementById("cinco").addEventListener("click", () => {agregarNumero("5")});
-    const seis = document.getElementById("seis").addEventListener("click", () => {agregarNumero("6")});
-    const siete = document.getElementById("siete").addEventListener("click", () => {agregarNumero("7")});
-    const ocho = document.getElementById("ocho").addEventListener("click", () => {agregarNumero("8")});
-    const nueve = document.getElementById("nueve").addEventListener("click", () => {agregarNumero("9")});
+
+    const numeros = document.getElementsByClassName("numero");
+    const nums = Array.from(numeros);
+    
+    nums.forEach(boton => {boton.addEventListener("click", () => {
+            let num = boton.innerText;
+            agregarNumero(num);
+        })
+    });
 
     const borrar = document.getElementById("borrar").addEventListener("click", () => {borrado()});
 
@@ -52,7 +51,7 @@ window.onload = () => {
         ope = divide;
         num1 = parseFloat(resultado.innerText);
         resultado.innerText = "";
-        previa.innerText += "/";
+        previa.innerText += " /";
     });
 
     const igual = document.getElementById("igual").addEventListener("click", () => {
