@@ -8,6 +8,7 @@ Temario visto en el 2º Curso del Grado Superior de Desarrollo de Aplicaciones W
 - Unidad 4. Interacción con el usuario
 - Proyectos
   - AdivinaColor
+  - Calculadora
 
 -- DISEÑO DE INTERFACES WEB
 
