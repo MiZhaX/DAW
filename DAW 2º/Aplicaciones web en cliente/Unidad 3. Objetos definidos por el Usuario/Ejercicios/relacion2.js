@@ -12,7 +12,7 @@ function paresImpares() {
   
     const arrayFinal = [pares, impares];
   
-    console.log("Array final:", arrayOrganizado);
+    console.log("Array final:", arrayFinal);
 }
 
 // Ejercicio 7
