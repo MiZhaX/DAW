@@ -4,9 +4,8 @@ window.onload = () => {
     formulario.addEventListener('submit', (event) => {
         let valid = true;
 
-        // Clear previous errors
-        const errorFields = document.querySelectorAll('.error');
-        errorFields.forEach(field => field.textContent = '');
+        const errores = document.querySelectorAll('.error');
+        errores.forEach(error => error.textContent = '');
 
         const nombre = document.getElementById('nombre').value.trim();
         const apellidos = document.getElementById('apellidos').value.trim();
