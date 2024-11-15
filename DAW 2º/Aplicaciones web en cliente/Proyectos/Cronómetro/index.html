@@ -3,8 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="funciones.js"></script>
-    <title>Cronómetro</title>
+<script src="funciones.js"></script>
+<title>Cronómetro</title>
+<style>
+    body {
+        background-color: rgb(254, 166, 0);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .titulo {
+        text-align: center;
+    }
+    .crono {
+        text-align: center;
+    }
+    #reloj{
+        font-size: 50px;
+        margin: 20px;
+    }
+    .botones {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    button {
+        width: 120px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: transparent;
+        border-color: white;
+        color: white;
+        border-style: solid;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    button:hover {
+        background-color: white;
+        color: rgb(254, 166, 0);
+        font-weight: bold;
+    }
+</style>
 </head>
 <body>
     <div class="titulo">

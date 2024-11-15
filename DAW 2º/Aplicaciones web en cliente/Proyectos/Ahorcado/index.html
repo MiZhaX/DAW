@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del ahorcado</title>
+    <script src="funciones.js"></script>
+    <style>
+        body {
+            background-color: rgb(193, 215, 47);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        p{
+            font-size: xx-large;
+            margin-top: 0;
+        }
+        h1{
+            font-size: 50px;
+            margin-bottom: 0;
+        }
+        .titulos {
+            text-align: center;
+        }
+        .botones {
+            display: grid;
+            grid-template-columns: repeat(18, 1fr);
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        .botones button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: white;
+            color: rgb(193, 215, 47);
+            border-color: white;
+            border-style: solid;
+            border-radius: 10px;
+        }
+        .botones button:hover{
+            background-color: rgb(193, 215, 47);
+            color: white;
+            font-weight: bold;
+        }
+        .botones button:disabled{
+            opacity: 0.4;
+            cursor: default;
+        }
+        .botones button:disabled:hover{
+            background-color: white;
+            color: rgb(193, 215, 47);
+            font-weight: normal;
+        }
+        .palabra {
+            text-align: center;
+            letter-spacing: 0.40em;
+            font-size: xx-large;
+        }
+        .intentos{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="titulos">
+        <h1>HANGMAN</h1>
+        <p>Use the alphabet below to guess the word</p>
+    </div>
+    <div class="botones">
+        <button class="A">A</button>
+        <button class="B">B</button>
+        <button class="C">C</button>
+        <button class="D">D</button>
+        <button class="E">E</button>
+        <button class="F">F</button>
+        <button class="G">G</button>
+        <button class="H">H</button>
+        <button class="I">I</button>
+        <button class="J">J</button>
+        <button class="K">K</button>
+        <button class="L">L</button>
+        <button class="M">M</button>
+        <button class="N">N</button>
+        <button class="Ñ">Ñ</button>
+        <button class="O">O</button>
+        <button class="P">P</button>
+        <button class="Q">Q</button>
+        <button class="R">R</button>
+        <button class="S">S</button>
+        <button class="T">T</button>
+        <button class="U">U</button>
+        <button class="V">V</button>
+        <button class="W">W</button>
+        <button class="X">X</button>
+        <button class="Y">Y</button>
+        <button class="Z">Z</button>
+    </div>
+    <p>The Chosen Category is Cities</p>
+    <div class="palabra"></div>
+    <p class="intentos"></p>
+</body>
+</html>
