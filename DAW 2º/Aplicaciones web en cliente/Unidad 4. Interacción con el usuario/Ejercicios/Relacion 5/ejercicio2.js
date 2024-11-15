@@ -2,7 +2,7 @@ window.onload = () => {
     const formulario = document.getElementById('formulario');
 
     formulario.addEventListener('submit', (event) => {
-        let valid = true;
+        let valido = true;
 
         const errores = document.querySelectorAll('.error');
         errores.forEach(error => error.textContent = '');
@@ -20,39 +20,39 @@ window.onload = () => {
         // Validar Nombre y Apellidos
         if (!/^[A-Za-z\s]+$/.test(nombre)) {
             document.getElementById('nombreError').textContent = 'Nombre debe contener solo letras y espacios.';
-            valid = false;
+            valido = false;
         }
 
         if (!/^[A-Za-z\s]+$/.test(apellidos)) {
             document.getElementById('apellidosError').textContent = 'Apellidos deben contener solo letras y espacios.';
-            valid = false;
+            valido = false;
         }
 
         // Validar DNI 
         if (!/^\d{8}[A-Za-z]$/.test(dni)) {
             document.getElementById('dniError').textContent = 'El DNI debe contener 8 números seguidos de una letra.';
-            valid = false;
+            valido = false;
         }
 
         // Validar Teléfono
         if (!/^\d{9}$/.test(telefono)) {
             document.getElementById('telefonoError').textContent = 'El teléfono debe contener 9 dígitos.';
-            valid = false;
+            valido = false;
         }
 
         // Validar Correo Electrónico
         if (!correoRegex.test(correo)) {
             document.getElementById('correoError').textContent = 'El correo electrónico no es válido.';
-            valid = false;
+            valido = false;
         }
 
         // Validar Usuario 
         if (!usuarioRegex.test(usuario)) {
             document.getElementById('usuarioError').textContent = 'El nombre de usuario debe tener al menos 8 caracteres, incluyendo un número y un signo de puntuación.';
-            valid = false;
+            valido = false;
         }
 
-        if (!valid) {
+        if (!valido) {
             event.preventDefault();
         }
     });
