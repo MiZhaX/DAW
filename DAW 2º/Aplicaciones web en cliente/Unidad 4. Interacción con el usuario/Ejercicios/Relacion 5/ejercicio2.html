@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="ejercicio2.js"></script>
+    <style>
+        .error {
+            color: red;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="POST" id="formulario">
+        Nombre: <input type="text" id="nombre" required>
+        <span class="error" id="nombreError"></span><br>
+
+        Apellidos: <input type="text" id="apellidos" required>
+        <span class="error" id="apellidosError"></span><br>
+
+        DNI: <input type="text" id="dni" required>
+        <span class="error" id="dniError"></span><br>
+
+        Teléfono: <input type="tel" id="telefono" required>
+        <span class="error" id="telefonoError"></span><br>
+
+        Correo electrónico: <input type="email" id="correo" required>
+        <span class="error" id="correoError"></span><br>
+
+        Usuario: <input type="text" id="usuario" required>
+        <span class="error" id="usuarioError"></span><br>
+
+        <input type="submit" value="Entrar">
+    </form>
+</body>
+</html>
