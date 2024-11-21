@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Charts</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+    <script type="text/javascript">
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.load('current', {'packages':['geochart']});
+        google.charts.setOnLoadCallback(drawChart);
+        google.charts.setOnLoadCallback(drawRegionsMap);
+
+        var cambio = false;
+
+        function drawChart() {
+            var data1 = google.visualization.arrayToDataTable([
+                ["Partido", "Escaños", { role: "style" } ],
+                ["PP", 137, "blue"],
+                ["PSOE", 120, "red"],
+                ["VOX", 33, "green"],
+                ["SUMAR", 27, "pink"],
+                ["JUNTS", 7, "color: rgb(8, 197, 180)"],
+                ["ERC", 7, "color: rgb(255, 180, 56)"],
+                ["OTROS", 19, "black"]
+            ]);
+
+            var data2 = google.visualization.arrayToDataTable([
+                ["Partido", "Escaños", { role: "style" } ],
+                ["PP", 87, "blue"],
+                ["PSOE", 100, "red"],
+                ["VOX", 50, "green"],
+                ["SUMAR", 84, "pink"],
+                ["JUNTS", 12, "color: rgb(8, 197, 180)"],
+                ["ERC", 7, "color: rgb(255, 180, 56)"],
+                ["OTROS", 5, "black"]
+            ]);
+
+            var options = {
+                animation:{
+                    duration: 1000,
+                    easing: 'out'
+                },
+            }
+
+            var barras = new google.visualization.BarChart(document.getElementById("congreso_barras"));
+            setInterval(() => {
+                cambio = !cambio;
+                barras.draw(cambio ? data2 : data1, options);
+            }, 10000);
+            barras.draw(data1, options);
+
+            var sectores = new google.visualization.PieChart(document.getElementById("congreso_sectores"));
+            sectores.draw(data1);
+        }
+
+        function drawRegionsMap() {
+            var data = google.visualization.arrayToDataTable([
+                ['Country', 'Millones/Turistas'],
+                ['France', 100],
+                ['Spain', 85.17],
+                ['United States', 66.48],
+                ['Italy', 57.25],
+                ['Turkey', 55.16],
+                ['Mexico', 42.15],
+                ['United Kingdom', 37.22],
+                ['Germany', 34.8],
+                ['Greece', 32.74],
+                ['Austria', 30.91]
+            ]);
+
+            var options = {
+                colorAxis: {colors: ['blue', 'green']},
+                backgroundColor: 'lightblue',
+                datalessRegionColor: 'white',
+            };
+
+            var chart = new google.visualization.GeoChart(document.getElementById('paises_turismo'));
+
+            chart.draw(data, options);
+        }
+    </script>
+<body>
+    <div id="congreso_barras" style="width: 900px; height: 500px;"></div>
+    <div id="congreso_sectores" style="width: 900px; height: 500px;"></div>
+    <div id="paises_turismo" style="width: 900px; height: 550px;"></div>
+</body>
+</html>

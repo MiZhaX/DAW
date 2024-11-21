@@ -6,19 +6,29 @@
     <script src="funciones.js"></script>
     <title>Juego</title>
     <style>
-        #pantalla{
+        #pantalla {
             background-color: black;
         }
     </style>
 </head>
 <body>
     <svg width="1000" height="500" xmlns="http://www.w3.org/2000/svg" id="pantalla">
-        <circle id="pelota" cx="500" cy="250" r="30" fill="white"/>
-        <line id="porteria-jugador" x1="0" y1="0" x2="0" y2="500" style="stroke:grey;stroke-width:30"/>
-        <line id="porteria-cpu" x1="490" y1="0" x2="490" y2="500" style="stroke:white;stroke-width:20" stroke-dasharray="4"/>
-        <line x1="1000" y1="0" x2="1000" y2="500" style="stroke:grey;stroke-width:30px"/>
-        <rect id="jugador" width="30" height="120" x="30" y="190" fill="white"/>
-        <rect id="cpu" width="30" height="120" x="940" y="190" fill="white"/>
+        <!-- Pelota -->
+        <circle id="pelota" cx="500" cy="250" r="30" fill="white" />
+        
+        <!-- Porterías -->
+        <line id="porteria-jugador" x1="0" y1="0" x2="0" y2="500" style="stroke:grey;stroke-width:30" />
+        <line id="porteria-cpu" x1="490" y1="0" x2="490" y2="500" style="stroke:white;stroke-width:20" stroke-dasharray="4" />
+        <line x1="1000" y1="0" x2="1000" y2="500" style="stroke:grey;stroke-width:30px" />
+
+        <!-- Jugadores -->
+        <rect id="jugador" width="30" height="120" x="30" y="190" fill="white" />
+        <rect id="cpu" width="30" height="120" x="940" y="190" fill="white" />
+        
+        <!-- Marcador -->
+        <text id="marcador" x="490" y="50" fill="white" font-size="40" font-family="Arial" text-anchor="middle">
+            0 - 0
+        </text>
     </svg>
 </body>
 </html>
