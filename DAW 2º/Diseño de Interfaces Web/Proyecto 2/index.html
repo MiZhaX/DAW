@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Personal</title>
+    <script src="https://kit.fontawesome.com/c63f30e957.js" crossorigin="anonymous"></script>
+    <script src="funciones.js"></script>
+</head>
+
+<body>
+    <!-- Menú de navegación -->
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="Imagenes/programacion-web.png" alt="logo-web" class="logo">
+        </div>
+        <!-- Menú de navegación para la vista de móvil/tablet -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars fa-2xl" id="barras"></i>
+            <i class="fa-solid fa-x fa-2xl" id="x"></i>
+        </label>
+        <!-- Menú de navegación - Enlaces -->
+        <ul class="links">
+            <li><a href="#hero-section">Inicio</a></li>
+            <li><a href="#about-me">Sobre mí</a></li>
+            <li><a href="#knowledge">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </div>
+    <!-- Contenido de la página -->
+    <div class="content">
+        <!-- Sección Hero -->
+        <div class="hero-section" id="hero-section">
+            <div class="selfie">
+                <img src="Imagenes/perfil.png" alt="imagen-perfil" class="profile">
+            </div>
+            <div class="hero-text">
+                <h1 class="title">Hola, <br> Soy Mishael Bonel Ortiz</h1>
+                <p class="description">
+                    Bienvenido a mi portfolio personal. Soy Mishael Bonel Ortiz, echa un vistazo para conocerme un poco
+                    mejor.
+                </p>
+                <!-- Sección Hero - Redes Sociales -->
+                <div class="buttons">
+                    <a href="https://www.instagram.com/mizhax.bo/" target="_blank"><i
+                            class="fa-brands fa-square-instagram fa-2xl"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a href="https://github.com/MiZhaX" target="_blank" id="boton-github"><i
+                            class="fa-brands fa-github fa-2xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Sección Sobre mí -->
+        <section class="about-me" id="about-me">
+            <h2 class="about-me-title">Sobre mí</h2>
+            <div class="about-me-content">
+                <!-- Sección Sobre mí - Descripción -->
+                <div class="about-me-textt">
+                    <h3 class="about-me-subtitle">Estudiante DAW</h3>
+                    <p class="about-me-description">
+                        Soy Mishael Bonel Ortiz, estudiante del grado superior de Desarrollo de aplicaciones web. En
+                        este portfolio encontraras
+                        información sobre mis proyectos personales que he realizado durante el curso, además de los
+                        niveles de conocimientos que
+                        tengo sobre diversos lenguajes de programación. En caso de que quieras contactar conmigo, no
+                        dudes en rellenar el formulario
+                        al final de la página ¡Espero que podamos trabajar juntos!
+                    </p>
+                </div>
+                <!-- Sección Sobre mí - Foto -->
+                <div class="about-me-photo">
+                    <img src="Imagenes/perfil2.jfif" alt="Foto de perfil" class="profile2">
+                </div>
+            </div>
+        </section>
+        <!-- Sección Habilidades -->
+        <section class="knowledge" id="knowledge">
+            <h2 class="knowledge-title">Habilidades</h2>
+            <!-- Sección Habilidades - Lista de Lenguajes -->
+            <div class="skill">
+                <p>HTML</p>
+                <progress class="progress-bar" max="100" value="0" data-target="85"></progress>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <progress class="progress-bar" max="100" value="0" data-target="60"></progress>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <progress class="progress-bar" max="100" value="0" data-target="40"></progress>
+            </div>
+            <div class="skill">
+                <p>Java</p>
+                <progress class="progress-bar" max="100" value="0" data-target="75"></progress>
+            </div>
+            <div class="skill">
+                <p>PHP</p>
+                <progress class="progress-bar" max="100" value="0" data-target="30"></progress>
+            </div>
+            <div class="skill">
+                <p>Python</p>
+                <progress class="progress-bar" max="100" value="0" data-target="25"></progress>
+            </div>
+        </section>
+        <!-- Sección Proyectos -->
+        <section class="projects" id="projects">
+            <h2 class="projects-title">Proyectos Personales</h2>
+            <!-- Sección Proyectos - Galería de proyectos-->
+            <div class="projects-gallery">
+                <div class="project-card">
+                    <a href="https://github.com/MiZhaX/DAW/tree/f51b7d322cd6d1cd0558b8876e6138051ac0c527/DAW%202%C2%BA/Aplicaciones%20web%20en%20cliente/Proyectos/AdivinarColor"
+                        target="_blank">
+                        <img src="Imagenes/proyecto1.png" alt="Proyecto 1" class="project-image">
+                        <div class="project-title">The Great Guessing Game</div>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/MiZhaX/DAW/tree/f51b7d322cd6d1cd0558b8876e6138051ac0c527/DAW%202%C2%BA/Aplicaciones%20web%20en%20cliente/Proyectos/Ahorcado"
+                        target="_blank">
+                        <img src="Imagenes/proyecto2.png" alt="Proyecto 2" class="project-image">
+                        <div class="project-title">Hangman</div>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/MiZhaX/DAW/tree/f51b7d322cd6d1cd0558b8876e6138051ac0c527/DAW%202%C2%BA/Aplicaciones%20web%20en%20cliente/Proyectos/Cron%C3%B3metro"
+                        target="_blank">
+                        <img src="Imagenes/proyecto3.png" alt="Proyecto 3" class="project-image">
+                        <div class="project-title">Stopwatch</div>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/MiZhaX/DAW/tree/f51b7d322cd6d1cd0558b8876e6138051ac0c527/DAW%202%C2%BA/Aplicaciones%20web%20en%20cliente/Unidad%205.%20DOM/Ejercicios/Pong"
+                        target="_blank">
+                        <img src="Imagenes/proyecto4.png" alt="Proyecto 4" class="project-image">
+                        <div class="project-title">Pong Game</div>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/MiZhaX/DAW/tree/f51b7d322cd6d1cd0558b8876e6138051ac0c527/DAW%202%C2%BA/Aplicaciones%20web%20en%20cliente/Unidad%205.%20DOM/Ejercicios/PelotasRebotar"
+                        target="_blank">
+                        <img src="Imagenes/proyecto5.png" alt="Proyecto 5" class="project-image">
+                        <div class="project-title">Bumping Balls</div>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/MiZhaX/DAW/tree/f51b7d322cd6d1cd0558b8876e6138051ac0c527/DAW%202%C2%BA/Dise%C3%B1o%20de%20Interfaces%20Web/Proyecto1"
+                        target="_blank">
+                        <img src="Imagenes/proyecto6.png" alt="Proyecto 6" class="project-image">
+                        <div class="project-title">Designing a Film Site</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Sección Contacto -->
+        <section id="contact" class="contact">
+            <h2 class="contact-title">Contacto</h2>
+            <!-- Sección Contacto - Formulario -->
+            <form action="submit_form.php" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre:*</label>
+                    <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:*</label>
+                    <input type="email" id="email" name="email" required placeholder="Ingresa tu correo">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-box">
+            <p>&copy; 2024 Mishael Bonel Ortiz</p>
+        </div>
+    </footer>
+</body>
+
+</html>
