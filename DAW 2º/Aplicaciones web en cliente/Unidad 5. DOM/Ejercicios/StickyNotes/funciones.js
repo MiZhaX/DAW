@@ -6,7 +6,7 @@ window.onload = () => {
 
     // Función para arrastrar las notas
     const arrastrarNota = (nota) => {
-        nota.onmousedown = function(event) {
+        nota.onmousedown = function (event) {
             const posX = event.clientX - nota.getBoundingClientRect().left;
             const posY = event.clientY - nota.getBoundingClientRect().top;
 
@@ -42,7 +42,7 @@ window.onload = () => {
 
         cajaNota.innerHTML = `
             <h3>${nombre}</h3>
-            <p>${descripcion}</p>
+            <p contenteditable="true">${descripcion}</p>
         `;
 
         divNotas.appendChild(cajaNota);
@@ -50,13 +50,27 @@ window.onload = () => {
         // Habilitar el arrastre en la nueva nota
         arrastrarNota(cajaNota);
 
+        // Editar el contenido de la nota
+        const contenido = cajaNota.querySelector('p');
+        contenido.addEventListener('blur', () => {
+            const notaIndex = notasGuardadas.findIndex(
+                nota => nota.nombre === nombre && nota.descripcion === descripcion
+            );
+
+            if (notaIndex !== -1) {
+                notasGuardadas[notaIndex].descripcion = contenido.textContent.trim();
+                localStorage.setItem('notas', JSON.stringify(notasGuardadas));
+            }
+        });
+
         // Eliminar la nota al hacer clic derecho
         cajaNota.addEventListener('contextmenu', (event) => {
-            event.preventDefault(); 
+            event.preventDefault();
             cajaNota.remove();
 
-            // Eliminar la nota del LocalStorage
-            notasGuardadas = notasGuardadas.filter(nota => nota.nombre !== nombre || nota.descripcion !== descripcion);
+            notasGuardadas = notasGuardadas.filter(
+                nota => nota.nombre !== nombre || nota.descripcion !== contenido.textContent.trim()
+            );
             localStorage.setItem('notas', JSON.stringify(notasGuardadas));
         });
     };
@@ -71,10 +85,10 @@ window.onload = () => {
         crearNota(nota.nombre, nota.descripcion);
     });
 
-    // Función para agregar notas del formulario
+    // Función para agregar notas desde el formulario
     submit.addEventListener('click', () => {
-        const valorN = nombre.value.trim();
-        const valorD = descripcion.value.trim();
+        const valorN = nombre.value;
+        const valorD = descripcion.value;
 
         if (valorN === "" || valorD === "") {
             console.log("Algún campo no está completo");
