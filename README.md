@@ -8,6 +8,7 @@ Temario visto en el 2º Curso del Grado Superior de Desarrollo de Aplicaciones W
 - Unidad 4. Interacción con el usuario
 - Unidad 5. DOM
 - Unidad 6. Mecanismos de comunicación asíncrona
+- Unidad 7. VueJS
 - Proyectos
   - AdivinaColor
   - Calculadora
