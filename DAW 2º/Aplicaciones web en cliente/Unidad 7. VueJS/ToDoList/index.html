@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>TO-DO LIST</h1>
+        
+        <input type="text" id="taskList-input" placeholder="e.g. Acabar Proyecto" v-model="task.taskName" @keyup.enter="addTask">
+        <p id="pending">Tienes {{pendingTasks}} tarea(s) pendientes <button id="pending-btn" class="pending-btn" @click="deleteCompletedTasks">Borrar tareas completadas</button></p>
+        <ul id="taskList-list">
+            <div v-for="(task, index) in list" class="task-card">
+                <li class="task-li">
+                    <span :class="!task.complete ? 'task-name' : 'completed-task'">{{task.taskName}}</span>
+                    <span id="prority-buttons">
+                        <button v-if="!task.complete" class="edit-btn" @click="markTask(index)">✔️</button> 
+                        <button v-else class="edit-btn" @click="markTask(index)">❌</button> 
+                        <button class="delete-btn" @click="quitTask(index)">🗑️</button>
+                    </span>
+                </li>
+                <span id="task-buttons"> Prioridad:
+                    <button :class="task.priority == 0 ? 'active-low-priority' : 'low-priority'" @click="lowPriority(index)">Low</button>
+                    <button :class="task.priority == 1 ? 'active-medium-priority' : 'medium-priority'" @click="mediumPriority(index)">Medium</button>
+                    <button :class="task.priority == 2 ? 'active-high-priority' : 'high-priority'" @click="highPriority(index)">High</button>
+                </span>
+            </div>
+        </ul>
+        <button id="clear-btn" class="clear-btn" @click="clearList">Limpiar lista</button>
+    </div>
+    <script src="vue.js"></script>
+</body>
+</html>
