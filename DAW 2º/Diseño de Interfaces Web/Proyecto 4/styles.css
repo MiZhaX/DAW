@@ -177,7 +177,7 @@ body {
 }
 
 .card-body .btn-outline-success {
-    --bs-btn-color: var(--main-color);
+    --bs-btn-color: black;
     --bs-btn-border-color: var(--main-color);
     --bs-btn-hover-bg: var(--main-color);
     --bs-btn-hover-border-color: var(--main-color);
