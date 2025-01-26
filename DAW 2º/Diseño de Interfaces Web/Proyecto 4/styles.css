@@ -184,12 +184,12 @@ body {
     --bs-btn-active-bg: var(--main-color);
     --bs-btn-active-border-color: var(--main-color);
     --bs-btn-disabled-color: var(--main-color);
-    --bs-btn-disabled-border-color: var(--main-color);
+    --bs-btn-disabled-border-color: var (--main-color);
 }
 
 .notice-title {
     font-size: larger;
-    font-family: var(--main-font);
+    font-family: var (--main-font);
 }
 
 .user-img {
@@ -204,5 +204,79 @@ body {
 }
 
 h2, .h5 {
-    font-family: var(--main-font);
+    font-family: var (--main-font);
+}
+
+@media (max-width: 426px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .login{
+        justify-content: flex-end;
+    }
+
+    .carousel-item img {
+        height: 16rem;
+    }
+
+    .carousel-caption .h5 {
+        font-size: large;
+    }
+
+    .carousel-caption p {
+        font-size: medium;
+    }
+
+    .card-img-top {
+        height: 15rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .accordion-item {
+        width: 100%;
+    }
+
+    .img-fluid {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .user-img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer h5 {
+        font-size: 1rem;
+    }
+
+    .footer p, .footer a {
+        font-size: 0.9rem;
+    }
+
+    .container-fluid, .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
