@@ -113,7 +113,7 @@ body {
     border-radius: 20px;
 }
 
-.carousel-caption h5 {
+.carousel-caption .h5 {
     color: var(--sec-color);
     font-size:xx-large;
     font-family: var(--main-font);
@@ -141,24 +141,24 @@ body {
 
 .footer {
     background-color: var(--main-color) !important;
-    color: var(--sec-color);
+    color: black;
     box-shadow: 0 -4px 2px -2px rgba(0, 0, 0, 0.5);
     padding: 40px 0;
 }
 
-.footer h5 {
-    color: var(--sec-color);
+.footer .h5 {
+    color: black;
     margin-bottom: 20px;
     font-family: var(--main-font);
 }
 
 .footer .text-muted {
-    color: var(--sec-color) !important;
+    color: black !important;
     font-family: var(--sec-font);
 }
 
 .footer a {
-    color: var(--sec-color);
+    color: black;
     text-decoration: none;
     font-family: var(--sec-font);
 }
@@ -168,14 +168,12 @@ body {
 }
 
 .footer .btn-outline-primary {
-    --bs-btn-color: var(--sec-color);
+    background-color: var(--sec-color);
+    --bs-btn-color: black;
     --bs-btn-border-color: var(--sec-color);
-    --bs-btn-hover-bg: var(--sec-color);
-    --bs-btn-hover-border-color: var(--sec-color);
-    --bs-btn-active-bg: var(--sec-color);
-    --bs-btn-active-border-color: var(--sec-color);
-    --bs-btn-disabled-color: var(--sec-color);
-    --bs-btn-disabled-border-color: var(--sec-color);
+    --bs-btn-hover-bg: var(--sec-alt-color);
+    --bs-btn-hover-border-color: var(--sec-alt-color);
+    --bs-btn-hover-color: black;
 }
 
 .card-body .btn-outline-success {
@@ -205,6 +203,6 @@ body {
     margin-bottom: 2rem;
 }
 
-h2, h5 {
+h2, .h5 {
     font-family: var(--main-font);
 }
