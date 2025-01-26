@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <script src="https://kit.fontawesome.com/c63f30e957.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg nav fixed-top">
+            <div class="container-fluid ms-5 me-5">
+                <a class="navbar-brand" href="#"><img src="./img/logo.jpg" alt="logo" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse search" id="navbarSupportedContent">
+                    <form class="d-flex w-100" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Busca tu película favorita"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0 options w-100 justify-content-between text-center">
+                        <li class="nav-item w-100">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a class="nav-link" href="#">Películas</a>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a class="nav-link" href="#">Ranking</a>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a class="nav-link" href="#">Cartelera</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn btn-outline-success" href="#">Login/Register</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide w-100 mx-auto" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/oscars.png" class="d-block w-100" alt="poster oscars 2025">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Nominados Oscars 2025</h5>
+                        <p>Conoce los nominados a los Oscars 2025.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/dune-part2.jpg" class="d-block w-100" alt="poster poster dune part 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Dune Part 2</h5>
+                        <p>"La mejor película de ciencia ficción de los últimos años".</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/conde_montecristo.jpg" class="d-block w-100" alt="poster conde de monstecristo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>El conde de montecristo</h5>
+                        <p>"Probablemente la mejor versión cinematográfica del novelón de Dumas".</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h2 class="mt-5 text-center">EN CINES</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4  w-75 mx-auto">
+            <div class="col">
+                <div class="card">
+                    <img src="https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00005559/0000009919/The_Brutalist.jpg"
+                        class="card-img-top" alt="brutalist_poster">
+                    <div class="card-body">
+                        <h5 class="card-title">The Brutalist</h5>
+                        <p class="card-text">Huyendo de la Europa de la posguerra, el visionario arquitecto László Toth
+                            llega a Estados Unidos para
+                            reconstruir su vida, su obra y su matrimonio.</p>
+                        <a class="btn btn-outline-success" href="#">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00005129/0000009716/Mufasa:_El_Rey_Le%C3%B3n.jpg"
+                        class="card-img-top" alt="mufasa_poster">
+                    <div class="card-body">
+                        <h5 class="card-title">Mufasa: The Lion King</h5>
+                        <p class="card-text">Rafiki debe transmitir la leyenda de Mufasa al joven cachorro de león
+                            Kiara, hija de Simba y Nala,
+                            con Timón y Pumba aporrtando su estilo carácterístico.</p>
+                        <a class="btn btn-outline-success" href="#">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00005130/0000009850/Sonic_3:_La_Pel%C3%ADcula.jpg"
+                        class="card-img-top" alt="sonic3_poster">
+                    <div class="card-body">
+                        <h5 class="card-title">Sonic 3</h5>
+                        <p class="card-text">Sonic, Tails y Knuckles se enfrentarán al Dr. Eggman antes de que conquiste
+                            el mundo.
+                            Eggman tendrá un nuevo aliado (Project Shadow)</p>
+                        <a class="btn btn-outline-success" href="#">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00005449/0000009707/C%C3%B3nclave.jpg"
+                        class="card-img-top" alt="conclave_poster">
+                    <div class="card-body">
+                        <h5 class="card-title">Cónclave</h5>
+                        <p class="card-text">Tras la inesperada muerte del Sumo Pontífice, el cardenal Lawrence es
+                            designado como responsable
+                            para liderar uno de los rituales más secretos y antiguos del mundo: la elección de un nuevo
+                            Papa.</p>
+                        <a class="btn btn-outline-success" href="#">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00005571/0000009969/VOSE_Old_Boy.jpg"
+                        class="card-img-top" alt="oldBoy_poster">
+                    <div class="card-body">
+                        <h5 class="card-title">Old Boy</h5>
+                        <p class="card-text">Oh Dae-su es un hombre de negocios coreano que un día es secuestrado y
+                            confinado durante años
+                            en una celda en la que sólo hay una televisión. Y, sin embargo, ignora por qué razón está
+                            allí... </p>
+                        <a class="btn btn-outline-success" href="#">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00005476/0000009808/Better_Man.jpg"
+                        class="card-img-top" alt="heretic_poster">
+                    <div class="card-body">
+                        <h5 class="card-title">Better Man</h5>
+                        <p class="card-text">La historia de Robbie Williams, uno de los mejores artistas del mundo, las
+                            experiencias que
+                            lo convirtieron en quien es y los demonios con los que luchó tanto dentro como fuera del
+                            escenario.</p>
+                        <a class="btn btn-outline-success" href="#">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="mt-5 text-center">NOTICIAS</h2>
+        <div class="accordion accordion-flush d-flex align-items-center flex-direction-column"
+            id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <img src="./img/oscars.jpeg" class="img-fluid me-2" alt="Notice 1"><span
+                            class="notice-title">Oscar 2025: Lista completa de nominados</span>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Tras el éxito de 'Oppenheimer' en los Premios Oscar 2024, donde la película de Christopher Nolan se alzó con 7 galardones, 
+                        llega el momento de encontrar sucesor. Hoy se han dado a conocer las nominaciones a los Premios Oscar 2025, los galardones de 
+                        la Academia de Cine de Hollywood que reconocen a las mejores películas de 2024 y a los mejores trabajos en todas las categorías técnicas, 
+                        artistas e interpretativas que componen una película y sostienen a la industria cinematográfica. <a href="#">Leer más...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <img src="./img/oldboy.jpg" class="img-fluid me-2" alt="Notice 2"><span
+                            class="notice-title">Vuelve 'Old boy', la mítica historia de venganza</span>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Old boy, que se llevó el Gran Premio del Jurado en el Festival de Cannes de 2004, es una de ellas. Una cinta de culto, apasionante y muy violenta 
+                        que hoy regresa a las pantallas españolas para que “puedan disfrutarla sus fans y conocerla las nuevas generaciones”, según explica el cineasta coreano 
+                        en una entrevista concedida por zoom a La Vanguardia. <a href="#">Leer más...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <img src="./img/goya.png" class="img-fluid me-2" alt="Notice 3"><span class="notice-title">Las
+                            películas nominadas a los Goya 2025 y dónde verlas</span>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        El 8 de febrero, Granada se convertirá en el escenario de los Premios Goya 2025, donde la Academia de Cine reconocerá lo mejor del año. Entre las películas 
+                        con más opciones al gran premio destacan El 47, La infiltrada, Casa en flames, La estrella azul y Segundo premio. <a href="#">Leer más...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="mt-5 text-center">OPINIONES</h2>
+        <div class="container mt-3 mb-5">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="https://ceslava.s3-accelerate.amazonaws.com/2016/04/mistery-man-gravatar-wordpress-avatar-persona-misteriosa-510x510.png"
+                        class="rounded-circle user-img" alt="Usuario 1" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top"
+                        data-bs-content="Su ambición narrativa, su coherencia y los temas abordados levantan toda una catedral cinematográfica. &ensp;&ensp;&ensp; ~The Brutalist~">
+                    <h5 class="mt-2">Nando Salvá</h5>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://ceslava.s3-accelerate.amazonaws.com/2016/04/mistery-man-gravatar-wordpress-avatar-persona-misteriosa-510x510.png"
+                        class="rounded-circle user-img" alt="Usuario 2" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top"
+                        data-bs-content="Tiene más que ofrecer que acción y violencia: es una imaginativa historia de culpa y venganza, con un impactante clímax que perdurará en la memoria ~Old Boy~">
+                    <h5 class="mt-2">Roger Ebert</h5>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://ceslava.s3-accelerate.amazonaws.com/2016/04/mistery-man-gravatar-wordpress-avatar-persona-misteriosa-510x510.png"
+                        class="rounded-circle user-img" alt="Usuario 3" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top"
+                        data-bs-content="Una película que redefine el género de ciencia ficción con una narrativa visual impresionante. ~Dune Part 2~">
+                    <h5 class="mt-2">Oti Rodríguez</h5>
+                </div>
+            </div>
+            <br><br>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="https://ceslava.s3-accelerate.amazonaws.com/2016/04/mistery-man-gravatar-wordpress-avatar-persona-misteriosa-510x510.png"
+                        class="rounded-circle user-img" alt="Usuario 4" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top"
+                        data-bs-content="Una historia conmovedora y visualmente deslumbrante que captura la esencia de la vida salvaje. ~Mufasa: The Lion King~">
+                    <h5 class="mt-2">Manohla Dargis</h5>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://ceslava.s3-accelerate.amazonaws.com/2016/04/mistery-man-gravatar-wordpress-avatar-persona-misteriosa-510x510.png"
+                        class="rounded-circle user-img" alt="Usuario 5" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top"
+                        data-bs-content="Una película que te mantiene al borde del asiento con su trama intrigante y actuaciones sobresalientes. ~Cónclave~">
+                    <h5 class="mt-2">Brian Pendreigh</h5>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://ceslava.s3-accelerate.amazonaws.com/2016/04/mistery-man-gravatar-wordpress-avatar-persona-misteriosa-510x510.png"
+                        class="rounded-circle user-img" alt="Usuario 6" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top"
+                        data-bs-content="Una biografía fascinante que revela los altibajos de una leyenda de la música. ~Better Man~">
+                    <h5 class="mt-2">Peter Travers</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos de Uso</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-facebook-f"></i> Facebook</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>Email: contacto@todocine.com</p>
+                    <p>Teléfono: +34 123 456 789</p>
+                </div>
+            </div>
+            <div class="mt-3">
+                <span class="text-muted">© 2025 TodoCine. Todos los derechos reservados.</span>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+</body>
+
+</html>

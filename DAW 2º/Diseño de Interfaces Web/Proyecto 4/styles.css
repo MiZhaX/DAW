@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Declaracion de variables */
+:root {
+    --main-color: rgb(92, 128, 134);
+    --main-alt-color: rgba(92, 128, 134, 0.474);
+    --sec-color: rgb(255, 218, 101);
+    --sec-alt-color: rgb(223, 191, 83);
+    --bg-color: rgb(163, 196, 203);
+    --main-font: 'Roboto', sans-serif;
+    --sec-font: 'Open Sans', sans-serif;
+}
+
+/* Estilos Bootstrap modificados */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        justify-content: center;
+    }
+}
+
+.navbar {
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.carousel {
+    margin-top: 6rem;
+}
+
+.btn-outline-success {
+    --bs-btn-color: var(--sec-color);
+    --bs-btn-border-color: var(--sec-color);
+    --bs-btn-hover-bg: var(--sec-color);
+    --bs-btn-hover-border-color: var(--sec-color);
+    --bs-btn-active-bg: var (--sec-color);
+    --bs-btn-active-border-color: var(--sec-color);
+    --bs-btn-disabled-color: var(--sec-color);
+    --bs-btn-disabled-border-color: var(--sec-color);
+}
+
+.navbar-nav {
+    margin-top: 0.5rem;
+}
+
+.nav-link {
+    background-color: var(--sec-color);
+    border: 1px solid var(--sec-alt-color);
+}
+
+.nav-link:hover {
+    background-color: var(--sec-alt-color);
+    border: 1px solid var(--sec-color);
+}
+
+.form-control {
+    outline: none;
+}
+
+.card-img-top {
+    height: 28rem;
+}
+
+.card-title {
+    text-align: center;
+    font-family: var(--main-font);
+}
+
+.card-text {
+    text-align: justify;
+    font-family: var(--sec-font);
+}
+
+.accordion-item {
+    width: 45rem;
+}
+
+.img-fluid {
+    height: 8rem;
+    width: 8rem;
+}
+
+/* Estilos propios */
+body {
+    background-color: var(--bg-color);
+    font-family: var(--sec-font);
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 40rem;
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.378);
+    border-radius: 20px;
+}
+
+.carousel-caption h5 {
+    color: var(--sec-color);
+    font-size:xx-large;
+    font-family: var(--main-font);
+}
+
+.carousel-caption p {
+    color: var(--sec-color);
+    font-size: large;
+    font-family: var(--sec-font);
+}
+
+.nav {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+}
+
+.search {
+    width: 35rem;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.footer {
+    background-color: var(--main-color) !important;
+    color: var(--sec-color);
+    box-shadow: 0 -4px 2px -2px rgba(0, 0, 0, 0.5);
+    padding: 40px 0;
+}
+
+.footer h5 {
+    color: var(--sec-color);
+    margin-bottom: 20px;
+    font-family: var(--main-font);
+}
+
+.footer .text-muted {
+    color: var(--sec-color) !important;
+    font-family: var(--sec-font);
+}
+
+.footer a {
+    color: var(--sec-color);
+    text-decoration: none;
+    font-family: var(--sec-font);
+}
+
+.footer a:hover {
+    color: black;
+}
+
+.footer .btn-outline-primary {
+    --bs-btn-color: var(--sec-color);
+    --bs-btn-border-color: var(--sec-color);
+    --bs-btn-hover-bg: var(--sec-color);
+    --bs-btn-hover-border-color: var(--sec-color);
+    --bs-btn-active-bg: var(--sec-color);
+    --bs-btn-active-border-color: var(--sec-color);
+    --bs-btn-disabled-color: var(--sec-color);
+    --bs-btn-disabled-border-color: var(--sec-color);
+}
+
+.card-body .btn-outline-success {
+    --bs-btn-color: var(--main-color);
+    --bs-btn-border-color: var(--main-color);
+    --bs-btn-hover-bg: var(--main-color);
+    --bs-btn-hover-border-color: var(--main-color);
+    --bs-btn-active-bg: var(--main-color);
+    --bs-btn-active-border-color: var(--main-color);
+    --bs-btn-disabled-color: var(--main-color);
+    --bs-btn-disabled-border-color: var(--main-color);
+}
+
+.notice-title {
+    font-size: larger;
+    font-family: var(--main-font);
+}
+
+.user-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.notices{
+    margin-bottom: 2rem;
+}
+
+h2, h5 {
+    font-family: var(--main-font);
+}
