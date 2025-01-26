@@ -38,14 +38,12 @@
 }
 
 .btn-outline-success {
-    --bs-btn-color: var(--sec-color);
+    background-color: var(--sec-color);
+    --bs-btn-color: black;
     --bs-btn-border-color: var(--sec-color);
-    --bs-btn-hover-bg: var(--sec-color);
+    --bs-btn-hover-bg: var(--sec-alt-color);
     --bs-btn-hover-border-color: var(--sec-color);
-    --bs-btn-active-bg: var (--sec-color);
-    --bs-btn-active-border-color: var(--sec-color);
-    --bs-btn-disabled-color: var(--sec-color);
-    --bs-btn-disabled-border-color: var(--sec-color);
+    --bs-btn-hover-color: black;
 }
 
 .navbar-nav {
@@ -99,6 +97,10 @@ body {
     width: 75px;
     height: 75px;
     object-fit: cover;
+}
+
+.title{
+    color: var(--sec-color);
 }
 
 .carousel-item img {
